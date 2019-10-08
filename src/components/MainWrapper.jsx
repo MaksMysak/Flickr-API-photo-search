@@ -23,7 +23,8 @@ class MainWrapper extends Component {
   }
 
   loadPhotos = () => {
-    fetch('https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=6b3575d10435de5f010fc941f5eff94a&tags='+this.state.value+'&text&per_page=100&page=1&format=json&nojsoncallback=1')
+    // YOU MUST INPUT YOUR FLICKR API KEY.
+    fetch('https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key='+'PLEASE-INPUT-YOUR-API-KEY'+'&tags='+this.state.value+'&text&per_page=100&page=1&format=json&nojsoncallback=1')
     .then(function(response){
       return response.json();
     })
